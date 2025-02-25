@@ -61,7 +61,7 @@ def extract_data():
 # Paso 2: Verificar datos (sin valores nulos y tipos de datos consistentes)
 def verify_data(df):
     if df.isnull().values.any():
-        print("Advertencia: Se encontraron valores nulos en los datos.")
+        print("Advertencia:nulos en los datos.")
         df = df.fillna("VACIO") 
 
     for col in df.columns:
