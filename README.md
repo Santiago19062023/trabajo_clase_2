@@ -1,20 +1,27 @@
 # trabajo_clase_2
 
-Que son bases de datos vectoriales 
+#Que son bases de datos vectoriales 
+
 Este tipo de bases están diseñados para para almacenar y administrar datos que están representados como vectores en espacios multidimensionales. 
 Los puntos de datos son almacenados como matrices de números llamados vectores que se agrupan según la similitud.
 Estas bases son útiles cuando se involucran búsquedas por similitud, como por ejemplo el reconocimiento de imágenes, recomendaciones y procesamiento de lenguaje natural (PLN) y para búsqueda aproximada en grandes volúmenes de datos no estructurados.
-Aplicaciones de bases de datos vectoriales.
+
+#Aplicaciones de bases de datos vectoriales.
 Se pueden usar en ámbitos como: 
 •	Procesamiento de lenguaje natural (PLN): Para búsqueda semántica en documentos y bases de conocimiento.
 •	Reconocimiento de imágenes: Comparación y búsqueda de imágenes similares en grandes bases de datos.
 •	Motores de recomendación: Comparación de preferencias de usuarios basadas en embeddings.
 •	Búsqueda de audio y video: Identificación y clasificación de archivos multimedia.
 •	Ciberseguridad: Análisis de patrones de actividad sospechosa.
+
+
 Como implemento en postgres Bases de Datos Vectoriales
+
 pgvector, es una extensión que permite que Postgres actúe como una base de datos vectorial, este permite consultar e indexar tipos de datos vectoriales, así como también generar y almacenar incrustaciones vectoriales de PostgreSQL. 
 PostgreSQL con pgvector permite almacenar y buscar vectores de manera eficiente, siendo ideal para aplicaciones como IA, NLP y motores de recomendación. La combinación de índices y consultas optimizadas ayuda a escalar la búsqueda por similitud en bases de datos grandes.
+
 Para implementar una Base de Datos Vectorial en PostgreSQL, se debe por ejemplo seguir los pasos:
+
 •	Instalación de pgvector
 Se debe instalar la extensión antes de poder usarla en PostgreSQL.
 En Linux (Debian/Ubuntu):
@@ -34,8 +41,11 @@ CREATE TABLE items (
     embedding vector(3) -- este "3" se cambiaria por el número de dimensiones necesarias
 );
 
+
 Que es un data lake.
+
 Un Data Lake es un repositorio de almacenamiento que permite guardar grandes volúmenes de datos en su formato original, estructurados, semiestructurados y no estructurados. A diferencia de los Data Warehouses, que requieren estructuración previa, los Data Lakes almacenan datos sin procesar y los organizan cuando son necesarios.
+
 Que aplicaciones tienen los data lakes. 
 Los Data Lakes son esenciales para empresas que trabajan con grandes volúmenes de datos, especialmente en Big Data, IA, IoT y análisis predictivo. Su flexibilidad y escalabilidad los convierten en una solución poderosa para extraer valor de datos no estructurados y optimizar la toma de decisiones:
 •	Big Data Analytics
